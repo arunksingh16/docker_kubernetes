@@ -42,6 +42,10 @@ docker run -dit --name aks -p 8090:80 -v /home/scrapbook/tutorial/:/usr/local/ap
 
 docker run -p 80:80 -dit --name aks arun161087/docker-http-server
 
+docker run ubuntu cat /etc/hosts
+
+docker run -it ubuntu bash 
+
 
 ===============================================================================================================
 

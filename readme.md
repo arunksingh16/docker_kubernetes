@@ -24,6 +24,8 @@ docker run -dit alpine sleep 10
 
 docker run -d -p 80:80 my_image service nginx start
 
+docker exec -it agitated_lewin /bin/bash
+
 docker inspect 
 
 git clone https://github.com/arunksingh16/docker.git
@@ -44,4 +46,6 @@ docker run -dit --name aks -p 8090:80 -v /home/scrapbook/tutorial/:/usr/local/ap
 ===============================================================================================================
 
 docker build -t webserver-image:v1 .
+
+
 docker run -d -p 80:80 webserver-image:v1

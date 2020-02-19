@@ -40,7 +40,7 @@ docker push arun161087/microservice:v1
 
 docker run -dit --name aks -p 8090:80 -v /home/scrapbook/tutorial/:/usr/local/apache2/htdocs/ httpd:2.4
 
-
+docker run -p 80:80 -dit --name aks arun161087/docker-http-server
 
 
 ===============================================================================================================

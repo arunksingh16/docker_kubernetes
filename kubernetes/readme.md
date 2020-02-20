@@ -17,20 +17,27 @@ kubectl create -f pod.yaml
 -  Pod Operation 
 
 kubectl get pods
+
 kubectl get pods -o wide
+
 kubectl describe pod <pod-name>
+
 kubectl get pods -o wide --show-labels --all-namespaces
+
 kubectl delete pods 
 
 - Create a Service 
 
 kubectl create -f service.yaml
+
 kubectl get services
 
 - Create a RS
 
 kubectl create -f rs.yaml
+
 kubectl scale --replicas=3 rs/rs
+
 kubectl delete replicaset rs
 
 - Delete a POD in RS

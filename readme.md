@@ -2,6 +2,8 @@
 
 docker images
 
+docker history <image>
+
 docker run alpine 
 docker run nginx:alpine
 docker run alpine sleep 10

@@ -8,6 +8,7 @@ kubectl run pod1 --image=arun161087/docker-http-server --generator=run-pod/v1
 
 kubectl label pods pod1 env=dev
 
+(Make sure to fill the --restart flag with =Never, or you’re risking creating a deployment instead of a pod. )
 
 - Creating a pod via Yaml file
 

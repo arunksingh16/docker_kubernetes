@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: repcon
+spec:
+  replicas: 3
+  selector:
+    env: dev
+    tier: frontend
+  template:
+    metadata:
+      name: repconpods
+      labels:
+        env: dev
+        tier: frontend
+    spec:
+      containers:
+      - name: repconpods
+        image: arun161087/docker-http-server
+        ports:
+        - containerPort: 80
